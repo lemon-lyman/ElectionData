@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 
 class electionPlot:
-    
+
     def __init__(self, formatted_data):
         self.mercator = plt.imread("../data/US_Mercator.png")
         self.fig, self.ax = plt.subplots()
@@ -34,11 +34,11 @@ class electionPlot:
 
     def ll2pix(self, lat, long):
 
-        x_b = 13.869760376296599
-        y_b = -17.735005053227518
+        x_b = 13.899769576026893
+        y_b = -17.649876726373186
 
-        x_a = 1753.4308496643794
-        y_a = 903.176795769178
+        x_a = 1756.7227257404702
+        y_a = 882.8296984918912
 
         return (x_b*long + x_a, y_b*lat + y_a)
 
